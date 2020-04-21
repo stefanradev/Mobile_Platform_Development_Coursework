@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Name: Stefan Radev
+    Matric number: S1631258
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+            <TextView
+                android:id="@+id/salutation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="Matric Number: S1631258"/>
+
+            <TextView
+                android:id="@+id/acknowledgement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_below="@id/salutation"
+                android:text="Traffic Scotland Road Data"/>
+
+            <TextView
+                android:id="@+id/reminder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_below="@id/acknowledgement"
+                android:text="Press one of the buttons to get the desired data live: "/>
+
+            <Button
+                android:id="@+id/roadworksButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reminder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="#75F8AD18"
+                android:textSize="10sp"
+                android:text="Data for roadworks"/>
+
+            <Button
+                android:id="@+id/plannedroadworksButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/roadworksButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="#75F8AD18"
+                android:textSize="10sp"
+                android:text="Data for planned roadworks"/>
+
+            <Button
+                android:id="@+id/currentincidentsButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/plannedroadworksButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="#75F8AD18"
+                android:textSize="10sp"
+                android:text="Data for current incidents"/>
+
+            <TextView
+                android:id="@+id/rawDataDisplay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/currentincidentsButton"
+                android:text="The Data will be displayed here"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
